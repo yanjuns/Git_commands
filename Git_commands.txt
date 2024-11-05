@@ -1,4 +1,4 @@
-# Examples of setting up a local git and remote github repos:
+# For setting up a local git and remote github repos
 
 ## Make a new directory and put your scripts inside
 cd /c/Users/yanjuns/Desktop/MATLAB_code_Git
@@ -17,7 +17,57 @@ git remote add origin https://github.com/yanjuns/Git_commands.git
 git push -u origin master
 git status
 
-##
+### note: if you want to remove or change a remote origin, run
+git remote remove origin
+git remote add origin https://github.com/yanjuns/Git_commands.git
+or
+git remote set-url origin https://github.com/yanjuns/Git_commands.git
+
+## For later commits, just navigate to the folder, and type
+git status
+git add .
+git commit -m 'your comment here'
+git push -u origin master
+git status
+
+
+***************************************************************************************************
+# For setting up a new computer and clone existing github repo to local drives
+
+## Download and install git bash on https://git-scm.com/downloads, open Git Bash, type
+git --version
+git config --global user.name "Yanjun Sun"
+git config --global user.email "yartsun@gmail.com"
+
+## If you want to clone your repo to local machine, make correspoding folders in you local drive.
+### I personally like to clone selected repos to local, so I prefer using -pull rather than -clone.
+cd /c/Users/yanjuns/Desktop/MATLAB_code_Git
+mkdir Git_commands
+cd Git_commands/
+
+## navigate to the folder with the same repo name on your computer (cd Git_commands/), then type
+git init
+git remote add origin https://github.com/yanjuns/Git_commands.git
+git pull origin master
+
+
+***************************************************************************************************
+# Some useful commands and good practices
+
+## Use git fetch and git merge:
+git fetch downloads the latest changes from the remote repository without merging them into your local branch.
+git merge allows you to manually merge the fetched changes into your current branch.
+This gives you more control over the merge process and helps you avoid unexpected conflicts.
+
+## git pull does fetch and merge
+If you have two computers, you worked on computer A, and pushed to the remote repo. Then you open
+computer B, and want to work on the same project. Make sure you git pull the changes first to local.
+
+## git stash
+
+
+***************************************************************************************************
+# Archive
 git init
 git status
 git add
@@ -31,27 +81,5 @@ git status
 git commit -m 'your comment here'
 git add .
 git push -u origin master
-
-
-git status
-git add .
-git commit -m 'your comment here'
-git push -u origin master
-
 git pull
 git stash
-
-###########################################################################
-## For setting up a new computer
-1. install git bash
-git config --global user.name "Yanjun Sun"
-git config --global user.email "yartsun@gmail.com"
-
-2. Make correspoding folders in you local place, e.g.,
-mkdir your-repo-name
-cd your-repo-name
-
-3. navigate to the folder with the same repo name on your computer, then type
-git init
-git remote add origin https://github.com/yanjuns/neuropixels_analysis.git
-git pull origin master
