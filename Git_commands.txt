@@ -1,0 +1,57 @@
+# Examples of setting up a local git and remote github repos:
+
+## Make a new directory and put your scripts inside
+cd /c/Users/yanjuns/Desktop/MATLAB_code_Git
+mkdir Git_commands
+cd Git_commands/
+
+## Create a new repo on github (https://github.com/new) with a same folder name
+https://github.com/yanjuns/Git_commands.git
+
+## Navigate to your local folder, i.e., cd Git_commands/, then enter
+git init
+git status
+git add .
+git commit -m 'your comment here'
+git remote add origin https://github.com/yanjuns/Git_commands.git
+git push -u origin master
+git status
+
+##
+git init
+git status
+git add
+git add .
+git commit -m 'your comment here'
+git config
+git config --global --edit
+git remote add origin https://github.com/yanjuns/neuropixels_analysis.git
+git push -u origin master
+git status
+git commit -m 'your comment here'
+git add .
+git push -u origin master
+
+
+git status
+git add .
+git commit -m 'your comment here'
+git push -u origin master
+
+git pull
+git stash
+
+###########################################################################
+## For setting up a new computer
+1. install git bash
+git config --global user.name "Yanjun Sun"
+git config --global user.email "yartsun@gmail.com"
+
+2. Make correspoding folders in you local place, e.g.,
+mkdir your-repo-name
+cd your-repo-name
+
+3. navigate to the folder with the same repo name on your computer, then type
+git init
+git remote add origin https://github.com/yanjuns/neuropixels_analysis.git
+git pull origin master
