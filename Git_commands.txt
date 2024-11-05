@@ -50,6 +50,7 @@ git init
 git remote add origin https://github.com/yanjuns/Git_commands.git
 git pull origin master
 
+### Note: at certain point, there will be a prompt for you to enter the password of github. 
 
 ***************************************************************************************************
 # Some useful commands and good practices
