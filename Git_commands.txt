@@ -37,7 +37,7 @@ git status
 ## Download and install git bash on https://git-scm.com/downloads, open Git Bash, type
 git --version
 git config --global user.name "Yanjun Sun"
-git config --global user.email "yartsun@gmail.com"
+git config --global user.email "y****@gmail.com"  ### Note: the actual email address was hided here
 
 ## If you want to clone your repo to local machine, make correspoding folders in you local drive.
 ### I personally like to clone selected repos to local, so I prefer using -pull rather than -clone.
