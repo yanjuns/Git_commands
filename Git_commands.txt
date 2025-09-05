@@ -53,6 +53,20 @@ git pull origin master
 ### Note: at certain point, there will be a prompt for you to enter the password of github. 
 
 ***************************************************************************************************
+# If you login GitHub under a different account and want to get re-authenticate to the original account
+
+## First, verify the remote location is correct by: 
+git remote -v
+
+## Second, Delete the cached GitHub creds
+
+GUI way (easiest):
+Windows Search → “Credential Manager” → Windows Credentials → under Generic Credentials delete any entries like:
+git:https://github.com
+
+## Then, try to push again and it the authentication window will prompt up
+
+***************************************************************************************************
 # Some useful commands and good practices
 
 ## Use git fetch and git merge:
