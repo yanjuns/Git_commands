@@ -52,6 +52,7 @@ git pull origin master
 
 ### Note: at certain point, there will be a prompt for you to enter the password of github. 
 
+
 ***************************************************************************************************
 # If you login GitHub under a different account and want to get re-authenticate to the original account
 
@@ -66,6 +67,7 @@ git:https://github.com
 
 ## Then, try to push again and it the authentication window will prompt up
 
+
 ***************************************************************************************************
 # Some useful commands and good practices
 
@@ -79,6 +81,28 @@ If you have two computers, you worked on computer A, and pushed to the remote re
 computer B, and want to work on the same project. Make sure you git pull the changes first to local.
 
 ## git stash
+
+
+***************************************************************************************************
+# How to update lab website with Visual Studio and Terminal
+
+## I think it is always good to delete the cached GitHub credentials as I have two different GitHub accounts.
+Windows Search → “Credential Manager” → Windows Credentials → under Generic Credentials delete any entries like:
+git:https://github.com
+
+## Open Visual Studio 2019 -> open folder Lab_website\suny-lab.github.io
+If VS does not show anything, go to View -> Solution Explorer
+Make any edits you want in Visual Studio
+
+## Open Terminal
+Type in: cd D:\Lab_website\suny-lab.github.io\
+Then type in: bundle exec jekyll serve --livereload
+
+## Open browser
+Type in: http://127.0.0.1:4000/
+This is to view the change locally
+
+## Use Visual Studio to commit and push to remote repo
 
 
 ***************************************************************************************************
