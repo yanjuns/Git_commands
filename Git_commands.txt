@@ -90,6 +90,8 @@ computer B, and want to work on the same project. Make sure you git pull the cha
 Windows Search → “Credential Manager” → Windows Credentials → under Generic Credentials delete any entries like:
 git:https://github.com
 
+## Also, make sure your browsers were logged out of GitHub. 
+
 ## Open Visual Studio 2019 -> open folder Lab_website\suny-lab.github.io
 If VS does not show anything, go to View -> Solution Explorer
 Make any edits you want in Visual Studio
